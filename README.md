@@ -21,9 +21,9 @@ Python 3.9 or higher
 
 Install dependencies:
 
-'''bash
+```bash
 pip install -r requirements.txt
-'''
+```
 
 ---
 
@@ -33,11 +33,11 @@ This project requires access to the Azure OpenAI API.
 
 Set environment variables before running:
 
-'''bash
+```bash
 export AZURE_OPENAI_ENDPOINT=YOUR_ENDPOINT
 export AZURE_OPENAI_API_KEY=YOUR_API_KEY
 export AZURE_OPENAI_API_VERSION=2024-02-01
-'''
+```
 
 ---
 
@@ -46,7 +46,10 @@ export AZURE_OPENAI_API_VERSION=2024-02-01
 Real operative notes cannot be shared due to patient privacy restrictions.
 
 A synthetic example dataset is provided:
+
+```bash
 example_data/synthetic_oper_notes.csv
+```
 
 Users may substitute their own dataset in the same format.
 
@@ -56,12 +59,12 @@ Users may substitute their own dataset in the same format.
 
 From the repository root:
 
-'''bash
+```bash
 python src/detect_adverse_events.py \
   --input_csv example_data/synthetic_oper_notes.csv \
   --output_csv results/sample_predictions.csv \
   --prompt_name adverse_event
-'''
+```
 
 ---
 
