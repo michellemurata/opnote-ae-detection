@@ -6,12 +6,25 @@ This repository contains code for automated detection of intraoperative adverse 
 
 The system identifies:
 
-- Incidental (unplanned) durotomy  
-- Non-durotomy intraoperative adverse events  
+* Incidental (unplanned) durotomy
+* Non-durotomy intraoperative adverse events
 
 This code accompanies the manuscript:
 
 > **“GPT-4-Assisted Detection of Intraoperative Adverse Events from Spine Surgery Operative Reports: A Comparison with Human Reviewers”**
+
+---
+
+## Model Information
+
+This pipeline was developed using GPT-4 accessed through the Azure OpenAI API.
+
+Model behavior and performance may vary depending on:
+
+* Model version or deployment
+* Prompt configuration
+* Sampling parameters
+* Dataset characteristics
 
 ---
 
@@ -39,6 +52,8 @@ export AZURE_OPENAI_API_KEY=YOUR_API_KEY
 export AZURE_OPENAI_API_VERSION=2024-02-01
 ```
 
+Running this pipeline requires paid API usage. Costs depend on dataset size and model pricing.
+
 ---
 
 ## Data
@@ -47,11 +62,13 @@ Real operative notes cannot be shared due to patient privacy restrictions.
 
 A synthetic example dataset is provided:
 
-```bash
+```
 example_data/synthetic_oper_notes.csv
 ```
 
 Users may substitute their own dataset in the same format.
+
+Users are responsible for ensuring compliance with all applicable privacy regulations (e.g., HIPAA) when applying this code to clinical text.
 
 ---
 
@@ -72,14 +89,36 @@ python src/detect_adverse_events.py \
 
 The pipeline produces a CSV file containing:
 
-- Predicted adverse event classification
-- Additional model response details
+* Predicted adverse event classification
+* Additional model response details
+* Raw model outputs
 
 ---
 
 ## Prompts
 
-Prompt templates are located in the prompts/ directory and can be modified for different classification tasks.
+Prompt templates are located in the `prompts/` directory and can be modified for different classification tasks.
+
+---
+
+## Reproducibility Notes
+
+Results may vary across runs due to:
+
+* Model updates
+* API behavior
+* Non-deterministic sampling
+* Differences in input datasets
+
+---
+
+## Citation
+
+If you use this code, please cite:
+
+Murata MA, et al.
+GPT-4-Assisted Detection of Intraoperative Adverse Events from Spine Surgery Operative Reports: A Comparison with Human Reviewers.
+[Journal Name], [Year].
 
 ---
 
