@@ -11,7 +11,7 @@ The system identifies:
 
 This code accompanies the manuscript:
 
-**"GPT-4–Assisted Detection of Intraoperative Adverse Events from Spine Surgery Operative Reports."**
+**"GPT-4-Assisted Detection of Intraoperative Adverse Events from Spine Surgery Operative Reports: A Comparison with Human Reviewers"**
 
 ---
 
