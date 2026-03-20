@@ -1,4 +1,4 @@
-# Automated Detection of Intraoperative Adverse Events from Spine Operative Notes
+# OpNote-AE: Automated Detection of Intraoperative Adverse Events from Spine Operative Notes
 
 ## Overview
 
