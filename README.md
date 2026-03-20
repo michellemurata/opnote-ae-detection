@@ -1,4 +1,4 @@
-# GPTReads - Automated Detection of Intraoperative Adverse Events from Spine Operative Notes
+# Automated Detection of Intraoperative Adverse Events from Spine Operative Notes
 
 ## Overview
 
