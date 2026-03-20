@@ -7,7 +7,7 @@ This repository contains code for automated detection of intraoperative adverse 
 The system identifies:
 
 - Incidental (unplanned) durotomy  
-- Other intraoperative adverse events  
+- Non-durotomy intraoperative adverse events  
 
 This code accompanies the manuscript:
 
@@ -58,8 +58,7 @@ python src/run_pipeline.py --input data/sample_notes.csv --output results/predic
 The pipeline outputs:
 
 - Durotomy classification (0/1)
-- Adverse event classification
-- Model response text
+- Adverse event classification (text descriptor)
 
 ---
 
